@@ -84,8 +84,36 @@ __Info: Επεξήγηση ακεραιότητας αναφορών__
 Τί χρειάζονται αυτές οι κλάσεις; 
 
 ### Tests and Unit testing in general
+Επειδή η λειτουργικότητα των ΒΔ είναι δύσκολο να δοκιμαστεί σε κινητό λόγω του απαραίτητου User Interface, ο καλύτερος τρόπος είναι να γίνει μέσω Unit Testing.
 
-κλάσεις: TestPractice και FullTestSuite
+Με τα Unit Tests εκτελείται δοκιμαστικά ο κώδικας με σκοπό να επαληθευτεί η σωστή του λειτουργία. Αφού εκτελεστεί ένα κομμάτι κώδικα (συνήθως το σπάμε σε μεθόδους) ελέγχεται αν η τιμή μιας μεταβλητής είναι η αναμενόμενη, αν ένας πίνακας είναι γεμάτος ή άδειος κ.ο.κ.
+
+Οι έλεγχοι αυτοί γίνονται με βοήθεια της μεθόδου assert().
+
+Παράδειγμα:
+
+```
+public void testThatDemonstratesAssertions() throws Throwable {
+
+        int a = 5;
+        int b = 3;
+        int c = 5;
+        int d = 10;
+
+        assertEquals("X should be equal", a, c);
+        assertTrue("Y should be true", d > a);
+        assertFalse("Z should be false", a == b);
+
+        if (b > d) {
+            fail("XX should never happen");
+        }
+    }
+
+```
+
+Διαβάστε περισσότερα για το Unit Testing στο [Tutorials Point](https://www.tutorialspoint.com/software_testing_dictionary/unit_testing.htm)
+
+Οι βασικές κλάσεις στις οποίες θα υλοποιήσουμε τα δικά μας Unit tests είναι οι κλάσεις: TestPractice και FullTestSuite
 
 
 ### Άσκηση 1. Δημιουργία Sunshine ΒΔ πίνακα Location
