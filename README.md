@@ -87,3 +87,16 @@ __Info: Επεξήγηση ακεραιότητας αναφορών__
 
 κλάσεις: TestPractice και FullTestSuite
 
+
+### Άσκηση 1. Δημιουργία Sunshine Location
+
+Hint:
+*Στην κλάση TestDb βγάζουμε απο σχόλια τη μέθοδο: testCreateDb()
+
+και στην κλάση TestUtilities τις μεθόδους()
+
+createNorthPoleLocationValues()
+insertNorthPoleLocationValues()*
+
+
+### Άσκηση 1. Δημιουργία Sunshine Location
