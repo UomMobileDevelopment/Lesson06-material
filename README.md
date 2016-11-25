@@ -17,11 +17,16 @@
 1. Το σύστημα αρχείων (File Storage) πχ εκεί αποθηκεύονται τα Shared Preferences 
 2. Μια μίνι-έκδοση βάσης δεδομένων που λέγεται SQLite
 
-Φυσικά το 2ο είναι πολύ πιο πολύπλοκο στην υλοποίηση, αλλά παρέχει σαφή και αποδοτική οργάνωση δεδομένων (+γρηγορη αναζήτηση++++)
+Φυσικά το 2ο είναι πολύ πιο πολύπλοκο στην υλοποίηση, αλλά παρέχει σαφή και αποδοτική οργάνωση δεδομένων (+γρηγορη αναζήτηση)
+
+![](https://github.com/UomMobileDevelopment/Lesson06-material/blob/master/sql-demo.PNG)
 
 
+Με τη χρήση του SQLite μέσα απο τον κώδικα μπορούμε εύκολα να δημιουργήσουμε πίνακες, να εισάγουμε και να διαγράψουμε δεδομένα. 
 
-DBContract
+### Αλλαγές Sunshine
+
+Ξεκινάμε την εισαγωγή του WeatherContract (DBContract). [DBContract lesson](https://developer.android.com/reference/android/provider/ContactsContract.html)
 
 Tests and Unit testing in general
 
