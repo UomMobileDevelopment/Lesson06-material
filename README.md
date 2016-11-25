@@ -55,10 +55,35 @@ public class WeatherContract {
  }
 ```
 
-Tests and Unit testing in general
+Για να αποφασίσουμε τι δεδομένα πρέπει να κρατήσουμε, μελετούμε το wireframe για την πρόβλεψη μιας ημέρας:
 
-DB tests
+![](https://github.com/UomMobileDevelopment/Lesson06-material/blob/master/sunshine-weather-wireframe.png)
 
-DB versioning
+αποφασίζουμε λοιπόν πως το πίνακας ``weather`` πρέπει να έχει τα εξής πεδία:
 
+- Record ID
+- Weather Condition ID 
+- Min Temp
+- Max Temp
+- Wind speed
+- Humidity
+- Date
+- Wind direction
+- Pressure
+
+### Κατανόηση Foreign Key και έννοιας ακεραιότητας αναφορών
+
+Ο Weather Location θα πρέπει επίσης να περιλαμβάνει και την πληροφορία της τοποθεσίας
+
+![](https://github.com/UomMobileDevelopment/Lesson06-material/blob/master/weather-location-key-foreign-key.PNG)
+
+__Info: Επεξήγηση ακεραιότητας αναφορών__
+
+### Επεξήγηση κλάσεων του πακέτου data (Weather Contract, WeatherDbHelper) 
+
+Τί χρειάζονται αυτές οι κλάσεις; 
+
+### Tests and Unit testing in general
+
+κλάσεις: TestPractice και FullTestSuite
 
