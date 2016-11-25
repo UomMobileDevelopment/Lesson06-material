@@ -26,7 +26,34 @@
 
 ### Αλλαγές Sunshine
 
-Ξεκινάμε την εισαγωγή του WeatherContract (DBContract). [DBContract lesson](https://developer.android.com/reference/android/provider/ContactsContract.html)
+Ξεκινάμε την εισαγωγή του WeatherContract [(DBContract)](https://developer.android.com/reference/android/provider/ContactsContract.html)
+
+Πρόκειται για τη διασύνδεση των πινάκων με τον κώδικα. Μια κλάση contract περιλαμβάνει έναν σύνολο static final Strings καθένα απο τα οποία περιγράφει το όνομα ενός πίνακα και της μιας στήλης στη ΒΔ
+
+![](https://github.com/UomMobileDevelopment/Lesson06-material/blob/master/db-contract.PNG)
+
+```
+public class WeatherContract {
+
+    /*
+        Inner class that defines the table contents of the location table
+        Students: This is where you will add the strings.  (Similar to what has been
+        done for WeatherEntry)
+     */
+    public static final class LocationEntry implements BaseColumns {
+        public static final String TABLE_NAME = "location";
+
+        public static final String COLUMN_LOCATION_SETTING = "location_setting";
+
+        public static final String COLUMN_CITY_NAME = "city_name";
+
+        public static final String COLUMN_COORD_LAT = "coord_lat";
+
+        public static final String COLUMN_COORD_LONG = "coord_long";
+
+    }
+ }
+```
 
 Tests and Unit testing in general
 
